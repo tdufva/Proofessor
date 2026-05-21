@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Proofessor Start Here screen</title>
+  <desc id="desc">Dark macOS app screenshot showing the guided Start Here flow: choose folder, scan, review sample suggestions, and export a demo CV.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3b32"/>
+      <stop offset="0.48" stop-color="#0d100f"/>
+      <stop offset="1" stop-color="#060706"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="760" fill="url(#bg)"/>
+  <rect x="112" y="70" width="1056" height="620" rx="18" fill="#101412" stroke="#f4efe426" filter="url(#shadow)"/>
+  <rect x="112" y="70" width="1056" height="42" rx="18" fill="#171c19"/>
+  <circle cx="140" cy="91" r="6" fill="#a83f4d"/>
+  <circle cx="162" cy="91" r="6" fill="#c7a75a"/>
+  <circle cx="184" cy="91" r="6" fill="#5d9b75"/>
+  <text x="150" y="162" fill="#f4efe4" font-family="Georgia, serif" font-size="36">Start Here</text>
+  <text x="150" y="196" fill="#aaa293" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17">Choose a folder, scan subfolders, review three samples, and export a tiny demo CV.</text>
+  <rect x="150" y="232" width="980" height="86" rx="8" fill="#f4efe40f" stroke="#f4efe422"/>
+  <text x="178" y="266" fill="#f4efe4" font-family="Georgia, serif" font-size="22">First 10 Minutes</text>
+  <text x="178" y="294" fill="#aaa293" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">A complete loop without reading documentation.</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14">
+    <rect x="640" y="252" width="112" height="28" rx="6" fill="#c7a75a2e"/>
+    <text x="658" y="271" fill="#d9c89e">folder chosen</text>
+    <rect x="766" y="252" width="112" height="28" rx="6" fill="#f0a23a2a"/>
+    <text x="783" y="271" fill="#e9a34d">scan next</text>
+    <rect x="892" y="252" width="132" height="28" rx="6" fill="#f4efe414"/>
+    <text x="910" y="271" fill="#aaa293">demo CV ready</text>
+  </g>
+  <rect x="150" y="344" width="470" height="236" rx="8" fill="#f4efe40d" stroke="#f4efe422"/>
+  <text x="178" y="380" fill="#f4efe4" font-family="Georgia, serif" font-size="24">1. Choose Folder</text>
+  <text x="178" y="408" fill="#aaa293" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Point the app at the place where tenure material already lives.</text>
+  <rect x="188" y="438" width="394" height="92" rx="8" fill="#f4efe40b" stroke="#f4efe44a" stroke-dasharray="8 6"/>
+  <text x="268" y="484" fill="#f4efe4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20">Evidence folder</text>
+  <rect x="188" y="548" width="172" height="34" rx="7" fill="#c7a75a"/>
+  <text x="208" y="570" fill="#10110d" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700">Choose Folder</text>
+  <rect x="650" y="344" width="480" height="236" rx="8" fill="#f4efe40d" stroke="#f4efe422"/>
+  <text x="678" y="380" fill="#f4efe4" font-family="Georgia, serif" font-size="24">2. Scan and Review</text>
+  <text x="678" y="408" fill="#aaa293" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Follow one clean loop from scan to CV export.</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" fill="#f4efe4">
+    <rect x="680" y="438" width="18" height="18" rx="3" fill="#c7a75a"/><text x="712" y="453">Deep scan</text>
+    <rect x="680" y="476" width="18" height="18" rx="3" fill="#c7a75a"/><text x="712" y="491">3 sample suggestions</text>
+    <rect x="680" y="514" width="18" height="18" rx="3" fill="#c7a75a"/><text x="712" y="529">Demo CV export</text>
+    <rect x="900" y="438" width="18" height="18" rx="3" fill="#c7a75a"/><text x="932" y="453">Editable records</text>
+    <rect x="900" y="476" width="18" height="18" rx="3" fill="#c7a75a"/><text x="932" y="491">Aalto criteria</text>
+  </g>
+  <rect x="898" y="614" width="162" height="38" rx="8" fill="#c7a75a"/>
+  <text x="922" y="638" fill="#10110d" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700">Start Here</text>
+</svg>

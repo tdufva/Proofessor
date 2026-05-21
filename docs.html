@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proofessor Documentation</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4efe4;
+      --muted: #aaa293;
+      --line: rgba(244, 239, 228, 0.16);
+      --panel: rgba(244, 239, 228, 0.045);
+      --gold: #c7a75a;
+      --black: #0d100f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, rgba(30, 59, 50, 0.42), transparent 28rem), var(--black);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(980px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 44px 0 76px;
+    }
+
+    a {
+      color: var(--gold);
+      text-underline-offset: 4px;
+    }
+
+    h1,
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 64px 0 18px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.35fr) minmax(0, 0.65fr);
+      gap: clamp(22px, 5vw, 64px);
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    ol,
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    li {
+      padding: 8px 0;
+    }
+
+    .back {
+      display: inline-flex;
+      margin-bottom: 38px;
+      color: var(--gold);
+    }
+
+    .shot {
+      margin: 18px 0 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--panel);
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    code {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 2px 5px;
+      color: var(--ink);
+      background: rgba(244, 239, 228, 0.08);
+    }
+
+    @media (max-width: 760px) {
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to Proofessor</a>
+    <h1>Documentation</h1>
+    <p>Use Proofessor as a private review desk: collect material, scan it, review suggestions, then build CV and dossier outputs from confirmed evidence.</p>
+
+    <section>
+      <h2>Get Started</h2>
+      <div>
+        <ol>
+          <li>Install the app and open it.</li>
+          <li>Use <strong>Start Here</strong>.</li>
+          <li>Choose one folder that contains tenure material.</li>
+          <li>Run the deep scan across folders and subfolders.</li>
+          <li>Review three sample suggestions to understand the workflow.</li>
+          <li>Export the tiny demo CV to see the endpoint.</li>
+        </ol>
+        <figure class="shot">
+          <img src="assets/screenshot-onboarding.svg" alt="Start Here screen with folder choice, scan, review samples, and demo CV export.">
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Review Suggestions</h2>
+      <div>
+        <ol>
+          <li>Select one or more suggestions.</li>
+          <li>Choose the Aalto school and career stage lens.</li>
+          <li>Read the Aalto dimension, confidence, why suggested, proof found, and missing pieces.</li>
+          <li>Check why the app found it: exact file, folder, date, text snippet, and source link.</li>
+          <li>Accept, edit, dismiss, merge duplicates, or mark proof needed.</li>
+        </ol>
+        <figure class="shot">
+          <img src="assets/screenshot-inbox.svg" alt="Evidence Inbox with selected suggestions, why the app found this, proof status, and batch review controls.">
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Build Evidence</h2>
+      <div>
+        <ul>
+          <li>Open <strong>Verify &amp; File</strong> to inspect a record.</li>
+          <li>Use the review queue to see what the scan found and why it matters.</li>
+          <li>Edit source details or notes only when needed.</li>
+          <li>Attach proof, archive URLs, and mark the record ready to use.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Track Criteria</h2>
+      <div>
+        <p>The overview shows Aalto-style coverage across research/artistic work, teaching, and impact/service. Use the school and stage presets as a review lens, then adapt the final dossier to local instructions.</p>
+        <figure class="shot">
+          <img src="assets/screenshot-dashboard.svg" alt="Tenure Overview with Aalto criteria presets and criteria matrix.">
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Export</h2>
+      <div>
+        <ul>
+          <li>Use <strong>Autofill My Profile</strong> once so CVs, bios, and dossier paragraphs know the name, title, affiliation, themes, links, and selected work.</li>
+          <li>Use <strong>Build CV</strong> to open the CV Design Studio and choose a purpose instead of manually styling the CV.</li>
+          <li>Preview typography, spacing density, section order, page count, and too-long or too-sparse warnings before export.</li>
+          <li>Use <strong>Bios</strong> to create academic, artistic, research, teaching, public, or speaker-introduction biographies.</li>
+          <li>Choose short, long, or custom character-limited output, then edit before copying or exporting.</li>
+          <li>Use <strong>Dossier Builder</strong> to create evidence-backed paragraphs for research/artistic work, teaching, impact/service, future trajectory, leadership, and international recognition.</li>
+          <li>Use <strong>Export</strong> to create CV files, readiness reports, dossier packets, and narrative drafts.</li>
+          <li>Keep the app workspace private unless you intentionally share an exported file.</li>
+        </ul>
+        <figure class="shot">
+          <img src="assets/screenshot-profile-autofill.svg" alt="Autofill My Profile screen with extracted identity, themes, links, and selected work.">
+        </figure>
+        <figure class="shot">
+          <img src="assets/screenshot-cv-studio.svg" alt="CV Design Studio with purpose choices and live preview.">
+        </figure>
+        <figure class="shot">
+          <img src="assets/screenshot-export-preview.svg" alt="Export Preview with page preview, typography, spacing density, section order, and warnings.">
+        </figure>
+        <figure class="shot">
+          <img src="assets/screenshot-dossier-narrative.svg" alt="Dossier Narrative Builder with evidence-backed paragraphs and proof warnings.">
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

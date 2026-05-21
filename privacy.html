@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proofessor Privacy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4efe4;
+      --muted: #aaa293;
+      --line: rgba(244, 239, 228, 0.16);
+      --gold: #c7a75a;
+      --black: #0d100f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, rgba(30, 59, 50, 0.42), transparent 28rem), var(--black);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(780px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 44px 0 70px;
+    }
+
+    a {
+      color: var(--gold);
+      text-underline-offset: 4px;
+    }
+
+    h1 {
+      margin: 64px 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 28px 0;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .back {
+      display: inline-flex;
+      margin-bottom: 38px;
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to Proofessor</a>
+    <h1>Privacy</h1>
+    <p>Proofessor is local-first. The shared download should be empty of personal records and ready for a new user.</p>
+
+    <ul>
+      <li>The app creates an empty workspace in the user's Documents folder.</li>
+      <li>Evidence records, attachments, profile links, and generated CV or dossier files stay in that local workspace.</li>
+      <li>The shared download should not include a user's workspace or personal evidence.</li>
+      <li>The app may open public profile links or archive web pages only when the user has configured those sources.</li>
+      <li>Calendar, mail, document-folder, profile, and public-web source settings are user-controlled.</li>
+    </ul>
+
+    <p>Users are responsible for checking whether their institution allows a given source to be used in a tenure dossier.</p>
+  </main>
+</body>
+</html>

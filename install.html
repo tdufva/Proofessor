@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Install Proofessor</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4efe4;
+      --muted: #aaa293;
+      --line: rgba(244, 239, 228, 0.16);
+      --gold: #c7a75a;
+      --black: #0d100f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, rgba(30, 59, 50, 0.42), transparent 28rem), var(--black);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(780px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 44px 0 70px;
+    }
+
+    a {
+      color: var(--gold);
+      text-underline-offset: 4px;
+    }
+
+    h1 {
+      margin: 64px 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    ol {
+      margin: 28px 0;
+      padding-left: 1.3rem;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    code {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 2px 5px;
+      color: var(--ink);
+      background: rgba(244, 239, 228, 0.08);
+    }
+
+    .back {
+      display: inline-flex;
+      margin-bottom: 38px;
+      color: var(--gold);
+    }
+
+    .note {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      color: #11110d;
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to Proofessor</a>
+    <h1>Install</h1>
+    <p>Download the standalone macOS app, place it in Applications, and choose what it may scan on first launch.</p>
+
+    <div class="actions">
+      <a class="button primary" href="downloads/Proofessor-macOS.zip" download>Download macOS app</a>
+      <a class="button" href="downloads/Proofessor-source.zip" download>Download source</a>
+      <a class="button" href="downloads/checksums.txt">Checksums</a>
+    </div>
+
+    <ol>
+      <li>Download <a href="downloads/Proofessor-macOS.zip"><code>Proofessor-macOS.zip</code></a>.</li>
+      <li>Open the zip file and move <code>Proofessor.app</code> to Applications.</li>
+      <li>Open the app. On first launch it creates <code>ProofessorWorkspace</code> in Documents.</li>
+      <li>Add evidence files to the workspace, or choose extra folders in Source Settings.</li>
+      <li>Run Deep Scan to import reviewable candidates.</li>
+    </ol>
+
+    <p class="note">For public distribution, use a Developer ID signed and notarized build. Unsigned private-test builds may require Control-click and Open on first launch.</p>
+    <p>The clean source package is available as <a href="downloads/Proofessor-source.zip"><code>Proofessor-source.zip</code></a>.</p>
+  </main>
+</body>
+</html>
